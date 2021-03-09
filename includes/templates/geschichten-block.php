@@ -9,4 +9,5 @@ $args_gesschichten = array(
 
 landscape_card($args_gesschichten, 'Geschichten & Menschen','', '', '/geschichten'); 
 
+
 ?>

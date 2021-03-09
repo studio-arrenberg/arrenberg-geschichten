@@ -2,7 +2,7 @@
 
 /**
  * 
- * Template Name: Geschichten [Default]
+ * Template Name: Geschichten
  * Template Post Type: geschichten
  * 
  */

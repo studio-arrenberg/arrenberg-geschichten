@@ -107,17 +107,17 @@ if(!class_exists("ArrenbergGeschichten"))
             /**
              * Assign templates for custom post types
              */
-            add_filter( 'single_template', 'geschichten_template_hook', 12 );
+            // add_filter( 'single_template', 'geschichten_template_hook' );
             function geschichten_template_hook() {
 
                 global $post;
 
                 if ( 'geschichten' === $post->post_type ) {
-                    $single_template = dirname( __FILE__ ) . '/includes/templates/single-geschichten.php';
+                    $template = dirname( __FILE__ ) . '/includes/templates/single-geschichten.php';
                 }
 
-                if ( !empty($single_template) ) {
-                    return $single_template;
+                if (doing_filter( 'single_template') && !empty($template) ) {
+                    return $template;
                 }
                 
             }
